@@ -1,0 +1,50 @@
+68097,  Camera SGSRZ, 36.390015,  Electronic
+30483,  Knife Set WRSZZ, 55.969971,  Home & Kitche
+44574,  Knife Set ASRHX, 64.619995,  Home & Kitche
+69525,  Camera XROCD, 76.050049,  Electronic
+20368,  Shirt FQFPK, 83.190002,  Clothin
+86128,  Biography ASTVE, 90.440002,  Book
+27939,  Textbook TWQKZ, 108.500061,  Book
+30631,  Headphones JFGYQ, 115.079895,  Electronic
+97895,  Blender KSJHL, 123.250061,  Home & Kitche
+98625,  Mystery BOPTP, 160.679993,  Book
+66208,  Blender GCZSK, 161.829895,  Home & Kitche
+22806,  Smartwatch VVFNT, 203.550110,  Electronic
+41355,  Headphones JOUXM, 211.570129,  Electronic
+39148,  Cutting Board OYHCV, 220.149963,  Home & Kitche
+98827,  Shirt RSQGL, 231.540100,  Clothin
+87296,  Skirt IRTZX, 261.079895,  Clothin
+34863,  Biography XPESK, 287.309998,  Book
+10889,  Shirt DNRZU, 316.480042,  Clothin
+26556,  Novel METLI, 376.450012,  Book
+43451,  Mixer CKVJQ, 379.500061,  Home & Kitche
+62422,  Camera VFQWS, 382.690002,  Electronic
+30895,  Knife Set KGFUF, 385.770081,  Home & Kitche
+68215,  Laptop QLBQC, 404.210022,  Electronic
+17646,  Biography BPWXR, 424.829895,  Book
+18086,  Shirt ZQLTI, 439.070007,  Clothin
+24976,  Pants YZMAK, 449.560120,  Clothin
+30251,  Pants HCBKI, 450.679993,  Clothin
+19897,  Blender DPKLR, 488.619995,  Home & Kitche
+64489,  Novel EFPYC, 502.609985,  Book
+93533,  Novel WOHSN, 516.390015,  Book
+57353,  Camera SBBHC, 546.880005,  Electronic
+95090,  Cutting Board RBACL, 568.629944,  Home & Kitche
+40852,  Novel IRROY, 603.679993,  Book
+96314,  Cutting Board LUICX, 628.290100,  Home & Kitche
+85719,  Laptop GZORF, 641.330139,  Electronic
+46944,  Smartwatch QNALX, 647.079895,  Electronic
+68960,  Blender OMDPS, 720.060120,  Home & Kitche
+25425,  Mystery MGSPG, 783.169983,  Book
+82777,  Shirt OZWXU, 790.460022,  Clothin
+13471,  Knife Set TPCMO, 831.899963,  Home & Kitche
+43566,  Mystery COKPK, 836.570129,  Book
+90291,  Pants TIPUD, 853.379944,  Clothin
+69260,  Toaster FODKJ, 867.599915,  Home & Kitche
+12848,  Toaster VZXUE, 867.970032,  Home & Kitche
+28710,  Dress FRSMO, 879.090149,  Clothin
+40374,  Smartphone ILGCU, 947.539978,  Electronic
+94162,  Laptop WRJOZ, 956.530029,  Electronic
+16041,  Jacket OTBKQ, 986.729980,  Clothin
+85197,  Cutting Board IJVPP, 986.890015,  Home & Kitche
+66237,  Headphones LTPLK, 995.130005,  Electronic
