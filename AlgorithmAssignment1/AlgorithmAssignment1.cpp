@@ -2,6 +2,7 @@
 #include <fstream>
 #include <string>
 #include <list>
+#include <time.h>
 using namespace std;
 
 class Shop
@@ -128,6 +129,11 @@ int Shop::Search(string name, int type)
 
 void Shop::Sort()
 {
+    clock_t start, end;
+    double cpu_time_used;
+
+    start = clock();
+
     bool inOrder = false;
 
     while (!inOrder)
@@ -146,36 +152,44 @@ void Shop::Sort()
 
             if (*it0 < *it1)
             {
-                *it0 = *it0 + *it1;
-                *it1 = *it0 - *it1;
-                *it0 = *it0 - *it1;
-                inOrder = false;
-
                 *it2 = *it2 + *it3;
                 *it3 = *it2 - *it3;
                 *it2 = *it2 - *it3;
+                cout << to_string(*it3) << ", ";
 
-                string temp;
+                string temp = "";
 
-                temp = *it4;
+
+                temp = *it4; 
                 *it4 = *it5;
                 *it5 = temp;
+                cout << *it5 << ", ";
+
+                *it0 = *it0 + *it1;
+                *it1 = *it0 - *it1;
+                *it0 = *it0 - *it1;
+                cout << to_string(*it1) << ", ";
 
                 temp = *it6;
                 *it6 = *it7;
                 *it7 = temp;
+                cout << *it7 << "\n";
+
+                inOrder = false;
             }
         }
     }
+    end = clock();
+    cpu_time_used = ((double)(end - start)) / CLOCKS_PER_SEC;
 }
 
 void Shop::SplitString(string line, int index)
 {
     int section = 0;
     string tempLine;
-    for(int i = 0; i < line.length(); i++)
+    for(int i = 0; i <= line.length(); i++)
     {
-        if (line[i] == ',' || i == line.length() - 1)
+        if (line[i] == ',' || i == line.length())
         {
             switch (section)
             {
@@ -212,6 +226,7 @@ void Shop::SplitString(string line, int index)
 
 int main()
 {
+    //Initialization
     Shop shop;
 
     fstream rFile;
@@ -227,6 +242,16 @@ int main()
 
     rFile.close();
 
+    shop.Insert(23013, " Knife Set VOAIW", 23.49, " Home & Kitchen");
+    index = shop.Search(23013);
+    auto it0 = std::next(shop.IDs.begin(), index);
+    auto it1 = std::next(shop.names.begin(), index);
+    auto it2 = std::next(shop.prices.begin(), index);
+    auto it3 = std::next(shop.categories.begin(), index);
+
+    cout << to_string(*it0) << *it1 << " " << to_string(*it2) << *it3;
+
+    //Writing changes
     ofstream wFile("product_data.txt");
 
     string textFileText;
@@ -234,15 +259,15 @@ int main()
     {
         auto it0 = std::next(shop.IDs.begin(), i);
         textFileText += to_string(*it0);
-        textFileText += ", ";
+        textFileText += ",";
 
         auto it1 = std::next(shop.names.begin(), i);
         textFileText += *it1;
-        textFileText += ", ";
+        textFileText += ",";
 
         auto it2 = std::next(shop.prices.begin(), i);
         textFileText += to_string(*it2);
-        textFileText += ", ";
+        textFileText += ",";
 
         auto it3 = std::next(shop.categories.begin(), i);
         textFileText += *it3;

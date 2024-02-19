@@ -1,2 +1,3 @@
 ﻿  AlgorithmAssignment1.cpp
+D:\Coding\AlgorithmAssignment1\AlgorithmAssignment1.cpp(245,68): warning C4305: 'argument': truncation from 'double' to 'float'
   AlgorithmAssignment1.vcxproj -> D:\Coding\AlgorithmAssignment1\x64\Debug\AlgorithmAssignment1.exe
